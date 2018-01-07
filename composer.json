@@ -20,7 +20,8 @@
         "zendframework/zend-expressive-zendviewrenderer": "^1.0",
         "zendframework/zend-expressive-helpers": "~3.0",
         "zendframework/zend-stratigility": "^2.0",
-        "filp/whoops": "^1.1"
+        "filp/whoops": "^1.1",
+        "dasprid/container-interop-doctrine": "^1.0"
     },
     "require-dev": {
         "composer/composer": ">=1.0.0-alpha10",

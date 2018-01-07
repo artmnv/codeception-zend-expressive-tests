@@ -12,7 +12,12 @@ return [
         'factories' => [
             Helper\UrlHelper::class => Helper\UrlHelperFactory::class,
             App\Action\HomePageAction::class => App\Action\HomePageFactory::class,
+            App\Action\DoctrineAction::class => App\Action\DoctrineActionFactory::class,
             Zend\Expressive\Application::class => Zend\Expressive\Container\ApplicationFactory::class,
-        ]
+            'doctrine.entity_manager.orm_default' => \ContainerInteropDoctrine\EntityManagerFactory::class,
+        ],
+        'aliases' => [
+            'Doctrine\ORM\EntityManager' => 'doctrine.entity_manager.orm_default',
+        ],
     ]
 ];

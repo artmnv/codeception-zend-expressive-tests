@@ -7,3 +7,4 @@
 $app->get('/', \App\Action\HomePageAction::class, 'home');
 $app->get('/api/ping', \App\Action\PingAction::class, 'api.ping');
 $app->route('/rest', \App\Action\RestAction::class, ['GET', 'POST', 'PUT', 'DELETE'], 'rest');
+$app->route('/doctrine', \App\Action\DoctrineAction::class);

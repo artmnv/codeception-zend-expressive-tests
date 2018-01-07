@@ -1,0 +1,10 @@
+class_name: DoctrineTester
+modules:
+    enabled:
+        - ZendExpressive
+        - REST:
+            depends:
+              ZendExpressive
+        - Doctrine2:
+            depends:
+              ZendExpressive
